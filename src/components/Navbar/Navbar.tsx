@@ -32,9 +32,20 @@ const navLinks: NavLinkInterface[] = [
 export default function  Navbar() {
 
     return (
-        <>
+        <nav>
+            <div className="nav-logo">
+                <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={100}
+                    height={50}
+                />
+            </div>
 
-        this is nav
-        </>
+            <div className="nav-links-section">
+                
+
+            </div>
+        </nav>
     )
 }
