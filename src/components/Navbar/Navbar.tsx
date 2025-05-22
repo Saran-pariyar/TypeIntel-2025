@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { NavLinkInterface } from "@/types/navbarTypes";
 
 const navLinks: NavLinkInterface[] = [
@@ -45,6 +45,8 @@ export default function  Navbar() {
             <div className="nav-links-section">
                 
                     this is a nav.
+
+                    {navLinks[1].name}
             </div>
         </nav>
     )
