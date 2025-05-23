@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 // import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 
 
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         {/* Main content of the page */}
         {children}
       </body>

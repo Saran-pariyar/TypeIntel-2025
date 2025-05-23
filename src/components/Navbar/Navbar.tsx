@@ -15,6 +15,7 @@ const navLinks: NavLinkInterface[] = [
     {
         name: 'Categories',
         path: '/',
+        subMenu:[],
         isActive: (pathname: string) => pathname === '/categories',
     },
     {
