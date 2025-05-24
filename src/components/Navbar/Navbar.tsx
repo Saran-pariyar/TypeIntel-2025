@@ -10,27 +10,27 @@ const navLinksItems: NavLinkInterface[] = [
     },
     {
         name: 'Tests',
-        path: '/tests',
+        path: '/Tests',
         isActive: (pathname: string) => pathname === '/tests',
     },
     {
         name: 'Categories',
-        path: '/categories',
-        subMenu: [{
-            name: 'Category 1',
-            path: '/categories/category1',
-            isActive: (pathname: string) => pathname === '/categories/category1',
-        }],
+        path: '/Categories',
+        // subMenu: [{
+        //     name: 'Category 1',
+        //     path: '/categories/category1',
+        //     isActive: (pathname: string) => pathname === '/categories/category1',
+        // }],
         isActive: (pathname: string) => pathname === '/categories',
     },
     {
         name: 'About',
-        path: '/about',
+        path: '/About',
         isActive: (pathname: string) => pathname === '/about',
     },
     {
         name: 'Sign In',
-        path: '/sign-in',
+        path: '/Sign-in',
         isActive: (pathname: string) => pathname === '/sign-in',
     },
 ]
