@@ -46,7 +46,7 @@ export default function Navbar() {
                     width={100}
                     height={50}
                 /> */}
-                <h3>Logo</h3>
+                <h3>TypeIntel</h3>
             </div>
 
             <div className="nav-list-container">
