@@ -19,6 +19,8 @@ card bg when hover: #173D35;
     top: 0;
     color: var(--text-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* border : 2px solid red ;  */
+    
 
 }
 
@@ -92,12 +94,14 @@ card bg when hover: #173D35;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .hamburger-menu {
-/* display: none; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
+
+
 }
 .ham-line {
     display: block;
@@ -111,20 +115,100 @@ card bg when hover: #173D35;
     .navbar {
         /* flex-direction: column;
         align-items: center; */
+        align-items: center;
+        /* justify-content: center; */
+        position: relative;
     }
     
+    .nav-logo{
+        font-size: 1.5rem;
+    }
     .nav-list {
         flex-direction: column;
         gap: 0.5rem;
-        display: none;
+        position: absolute;
+        /* top: ; */
+        top: 100%;
+        /* border : 2px solid red ;  */
+        width: 100%;
+        left: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .2s ease-in-out;
+        /* display: none; */
+        background-color: var(--background);
+        /* padding: 1rem; */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        
     }
-    
+    .nav-show{
+        max-height: 100vh;
+    }
     .nav-links {
-        font-size: 1.2rem;
+        display: block;
+        /* font-size: 1.2rem; */
+        margin: .5rem 0;
+        
     }
     
     .sign-in-btn {
         width: 100%;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
+.hamburger-menu {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ham-line {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 4px;
+  /* background-color: black; */
+  border-radius: 2px;
+  transition: 
+    transform 0.3s ease,
+    top 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Default hamburger positions */
+.ham-line1 {
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.ham-line2 {
+    top: 41%;
+  transform: translate(-50%, -50%);
+}
+
+.ham-line3 {
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* CROSS STATE */
+.cross .ham-line1,
+.cross .ham-line3 {
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross .ham-line3 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cross .ham-line2 {
+  opacity: 0;
+}
+
 }
