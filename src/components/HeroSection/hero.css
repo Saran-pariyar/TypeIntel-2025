@@ -1,16 +1,117 @@
 .hero-section{
+    padding: 1rem;
+    /* border : 2px solid red ;  */
+    /* background: radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.1) 0%, #111827 50%); */
+
+background: radial-gradient(
+  500px circle at 90% 100%,     /* Tight glow, positioned bottom-right */
+  rgba(255, 255, 255, 0.08),    /* Soft white glow */
+  rgba(10, 20, 40, 1) 60%       /* Fade into solid navy dark */
+);
+background-color: #0a1428; /* Fallback */
+
+min-height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero-section-container{
+    color: var(--text-color);
+    text-align: center;
+    width: 60%;
+    /* line-height: 3rem; */
+
+
+}
+/* .hero-section-container > *{
+    margin-top: 1rem;
+} */
+/* .hero-btn-container > *{
+    margin-top: 3rem;
+} */
+.hero-title{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.hero-second-title{
+    font-weight: bold;
+
+    color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 3rem;
+margin-top: 1rem;
 
 }
 
-.hero-section-container{}
+.hero-desc{
+    color: var(--text-color);
+    /* width: 50%; */
+margin-top: 2rem;
 
-.hero-title{}
-.hero-secton-title{}
+    
+}
 
-.hero-desc{}
+.hero-btn-container{
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 2rem;
+}
+/* .hero-btn-container{
+} */
+.hero-btn-container button{
+    display: inline-block;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    display : flex; 
+    justify-content: center; 
+    align-items : center; 
+    
+}
 
-.hero-btn-container{}
 
-.start-typing-btn{}
+.start-typing-btn{
+    color: white;
+    border: 2px solid var(--primary-color);
+}
 
-.view-demo-btn{}
+.view-demo-btn{
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .hero-section{
+        min-height: 100vh;
+    }
+  .hero-section-container {
+    width: 100%;
+  }
+
+  .hero-title,
+  .hero-second-title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .hero-desc {
+    width: 100%;
+    font-size: 1rem; /* optional */
+    line-height: 1.6rem; /* optional */
+  }
+
+  .hero-btn-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .hero-btn-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

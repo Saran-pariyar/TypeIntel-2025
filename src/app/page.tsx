@@ -1,5 +1,7 @@
 // import Image from "next/image";
 
+import HeroSection from "@/components/HeroSection/HeroSection";
+
 // import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Home() {
@@ -8,7 +10,7 @@ export default function Home() {
     {/* Welcome to TypeIntel */}
 
 
-    {/* <HeroSection /> */}
+    <HeroSection />
 
 
    </div>
