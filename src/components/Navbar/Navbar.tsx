@@ -12,6 +12,7 @@ const navItems = [
     {href : "/Categories", label: "Categories" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
+    { href: "/Typing", label: "Typing" },
 ]
 
     return (

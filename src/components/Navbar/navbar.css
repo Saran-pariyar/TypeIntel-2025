@@ -20,6 +20,7 @@ card bg when hover: #173D35;
     color: var(--text-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     /* border : 2px solid red ;  */
+    /* border : 2px solid red ;  */
     
 
 }
@@ -80,7 +81,8 @@ card bg when hover: #173D35;
 }
 
 .sign-in-btn:hover {
-    background-color: #28a745;
+    /* background-color: #28a745; */
+    color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -117,7 +119,7 @@ card bg when hover: #173D35;
         align-items: center; */
         align-items: center;
         /* justify-content: center; */
-        position: relative;
+        /* position: relative; */
     }
     
     .nav-logo{

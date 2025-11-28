@@ -10,6 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 todo.txt
+/extra_items
 
 # testing
 /coverage
