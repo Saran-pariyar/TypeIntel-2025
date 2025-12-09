@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ModeSelector from './typing-components/ModeSelector'
+import "./typing.css"
+import QuestionBox from './typing-components/QuestionBox'
 
 const TypingTestPage = () => {
-  return (
-    <div>TypingTestPage</div>
+
+  
+  return (<div>
+<div className="typing-container">
+
+<ModeSelector />
+<QuestionBox />
+</div>
+    </div>
   )
 }
 

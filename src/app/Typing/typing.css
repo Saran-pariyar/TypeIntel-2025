@@ -1,0 +1,26 @@
+:root{
+    --typing-main-color: #161022;
+    --typing-box-color: #1C162C;
+    --typing-button-color: #2F2348;
+    --box-border-radius: 8px;
+
+    --typing-value-small: .5rem;
+    --typing-value-medium: 1rem;
+    --typing-value-large: 2rem;
+    --typing-primary-text-color: #ffffff;
+}
+
+.typing-container{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--typing-main-color);
+    padding: var(--typing-value-medium);   
+    color: var(--typing-primary-text-color);
+}
+.typing-box-container{
+    background-color: var(--typing-box-color);
+    padding: var(--typing-value-medium);
+    border-radius: var(--box-border-radius);
+    border: 1px solid #636161;
+}
