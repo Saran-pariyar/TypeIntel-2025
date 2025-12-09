@@ -2,8 +2,13 @@
     --typing-main-color: #161022;
     --typing-box-color: #1C162C;
     --typing-button-color: #2F2348;
+    --typing-hover-dark-color: #171122;
     --box-border-radius: 8px;
 
+    --font-bold: 500;
+    --font-bolder: 800;
+
+    --typing-value-micro: .2rem;
     --typing-value-small: .5rem;
     --typing-value-medium: 1rem;
     --typing-value-large: 2rem;
@@ -23,4 +28,33 @@
     padding: var(--typing-value-medium);
     border-radius: var(--box-border-radius);
     border: 1px solid #636161;
+    margin: var(--typing-value-medium);
 }
+.mode-left-section{
+display: flex;
+}
+
+.timer-question-mode-container{
+    background-color: var(--typing-button-color);
+    border-radius: var(--box-border-radius);
+    display: flex;
+    /* border : 2px solid red ;  */
+    gap: 1rem;
+    padding: var(--typing-value-micro);
+
+}
+
+.mode-button{
+    transition: .3s all;
+    padding: var(--typing-value-small) var(--typing-value-large);
+cursor: pointer;
+border-radius: var(--box-border-radius);
+font-weight: var(--font-bold);
+
+
+}
+.mode-button:hover{
+    background-color: var(--typing-hover-dark-color);
+}
+.timer-mode-button{}
+.question-mode-button{}
