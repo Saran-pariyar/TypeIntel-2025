@@ -4,6 +4,7 @@
     --typing-button-color: #2F2348;
     --typing-hover-dark-color: #171122;
     --box-border-radius: 8px;
+    --box-default-border:  1px solid #636161;
 
     --font-bold: 500;
     --font-bolder: 800;
@@ -27,11 +28,14 @@
     background-color: var(--typing-box-color);
     padding: var(--typing-value-medium);
     border-radius: var(--box-border-radius);
-    border: 1px solid #636161;
+    border: var(--box-default-border);
     margin: var(--typing-value-medium);
 }
+.mode-selector-container{
+    display: flex;
+}
 .mode-left-section{
-display: flex;
+/* display: flex; */
 }
 
 .timer-question-mode-container{
@@ -56,5 +60,26 @@ font-weight: var(--font-bold);
 .mode-button:hover{
     background-color: var(--typing-hover-dark-color);
 }
-.timer-mode-button{}
+.timer-mode-button{
+    background-color: var(--typing-hover-dark-color);
+}
 .question-mode-button{}
+
+.just-answer-or-question-selector-container{
+    background-color: var(--typing-hover-dark-color);
+    padding: var(--typing-value-medium);
+    border-radius: var(--box-border-radius);
+    border: var(--box-default-border);
+    font-weight: var(--font-bolder);
+    margin-top: var(--typing-value-medium);
+    
+    display : flex; 
+    justify-content: space-between; 
+    align-items : center; 
+    
+}
+
+#typing-mode-switch{
+    border : 2px solid red ;
+     
+}

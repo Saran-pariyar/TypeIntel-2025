@@ -12,7 +12,7 @@ card bg when hover: #173D35;
 .navbar{
     display: flex;
     
-    background: var(--background);
+    background: var(--background-custom);
     justify-content: space-between;
     padding: 1rem 2rem;
     position: sticky;
